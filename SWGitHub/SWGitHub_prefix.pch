@@ -1,0 +1,19 @@
+//
+//  SWGitHub_prefix.pch
+//  SWGitHub
+//
+//  Created by Sergiy Bekker on 15.03.17.
+//  Copyright © 2017 SBApps. All rights reserved.
+//
+
+#ifndef SWGitHub_prefix_pch
+#define SWGitHub_prefix_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "AppConstants.h"
+#endif
+
+
+#endif /* SWGitHub_prefix_pch */
