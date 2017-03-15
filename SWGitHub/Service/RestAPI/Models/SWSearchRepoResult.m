@@ -12,7 +12,7 @@
 @implementation SWSearchRepoResult
 
 + (NSDictionary *)attributesMapping {
-    return @{@"items": @"items"
+    return @{@"total_count": @"total_count"
              };
 }
 
@@ -20,7 +20,8 @@
     
     RKObjectMapping *responseMapping = [super responseMapping];
     [responseMapping addAttributeMappingsFromDictionary:[self attributesMapping]];
-    
+    RKRelationshipMapping *rel = [RKRelationshipMapping relationshipMappingFromKeyPath:@"items" toKeyPath:@"items" withMapping:[SWRepository responseMapping]];
+    [responseMapping addPropertyMapping:rel];
     return responseMapping;
 }
 + (NSString *)pathPattern {

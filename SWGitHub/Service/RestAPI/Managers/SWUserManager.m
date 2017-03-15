@@ -15,12 +15,18 @@
 - (void) loadAuthenticatedUser:(void (^)(SWUser *))success failure:(void (^)(RKObjectRequestOperation *, NSError *))failure {
 
     
-    [self getObjectsAtPath:[SWUser pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [self showIndecator:YES];
+    
+    [self.sharedManager getObjectsAtPath:[SWUser pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [self showIndecator:NO];
         if (success) {
             SWUser *currentUser = (SWUser *)[mappingResult.array firstObject];
-            success(currentUser);
+            if(success)
+                success(currentUser);
         }
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        [self showIndecator:NO];
+        [self showAlertMessage:ERRRORLOGIN];
         if (failure) {
             failure(operation, error);
         }
@@ -34,7 +40,7 @@
     [super setupResponseDescriptors];
 
     RKResponseDescriptor *authenticatedUserResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[SWUser responseMapping] method:RKRequestMethodGET pathPattern:[SWUser pathPattern] keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    [self addResponseDescriptor:authenticatedUserResponseDescriptors];
+    [self.sharedManager addResponseDescriptor:authenticatedUserResponseDescriptors];
  
 }
 

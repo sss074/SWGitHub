@@ -15,11 +15,16 @@
 
 - (void) repositoriesUser:(void (^)(NSArray<SWRepository *> *repo))success failure:(void (^)(RKObjectRequestOperation *operation, NSError *error))failure{
     
-    [self getObjectsAtPath:[SWRepository pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [self showIndecator:YES];
+    
+    [self.sharedManager getObjectsAtPath:[SWRepository pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [self showIndecator:NO];
         if (success) {
             success((NSArray<SWRepository *>*)mappingResult.array);
         }
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        [self showIndecator:NO];
+        [self showAlertMessage:error.description];
         if (failure) {
             failure(operation, error);
         }
@@ -33,7 +38,7 @@
     [super setupResponseDescriptors];
   
     RKResponseDescriptor *repoResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[SWRepository responseMapping] method:RKRequestMethodGET pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    [self addResponseDescriptor:repoResponseDescriptors];
+    [self.sharedManager addResponseDescriptor:repoResponseDescriptors];
 }
 
 

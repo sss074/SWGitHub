@@ -15,8 +15,11 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self customizeAppearance];
+
     return YES;
 }
 
@@ -47,5 +50,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+- (void)customizeAppearance{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:239.f / 255.f green:243.f / 255.f blue:245.f / 255.f alpha:1.f]];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:54.f / 255.f green:57.f / 255.f blue:59.f / 255.f alpha:1.f],
+                                                           NSFontAttributeName:[UIFont fontWithName:FIRASANSMEDIUM size:22.f]
+                                                           }];
+}
 @end

@@ -22,4 +22,6 @@
 - (void)clearPresentForClassDescriptor;
 - (CGSize)sizeWithText:(NSString*)text width:(CGFloat)wdt font:(UIFont*)font;
 - (void)showIndecator:(BOOL)state;
+-(BOOL)validateEmail:(NSString *) obj;
+- (void)showAlertMessage:(NSString*)message;
 @end

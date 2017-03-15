@@ -1,17 +1,23 @@
 //
 //  AppConstants.h
-//  Lookshop
+//  SWGitHub
 //
-//  Created by Sergiy on 02.02.17.
-//  Copyright © 2017 Legendary-apps. All rights reserved.
+//  Created by Sergiy Bekker on 15.03.17.
+//  Copyright © 2017 SBApps. All rights reserved.
 //
 
 #ifndef AppConstants_h
 #define AppConstants_h
 
+#define ERRRORLOGIN @"Неверный логин или пароль"
+#define REPOTITLE @"Мои репозитории"
+#define SEARCHTITLE @"Поиск"
+#define EXITTITLE @"Выйти из аккаунта"
 
-#define PERSONAL_ACCESS_TOKEN @"PUT_YOUR_ACCESS_TOKEN"
+
 #define TheApp AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate]
+#define  FIRASANSMEDIUM @"FiraSans-Medium"
+#define  FIRASANSREGULAR @"FiraSans-Regular"
 
 static NSString * const kDevBaseApiUrl  =  @"https://api.github.com";
 static NSString *charSet = @"_.-/:;()&@\",?!'[]{}#%^*+=\\|~<>₽$£₹€•´`";
@@ -20,10 +26,7 @@ static NSString *emailCharTemplate = @" /:;()&\",?!'[]{}#%^*+=\\|~<>₽$£₹€
 
 typedef NS_ENUM(NSUInteger, NavBarType) {
     BASETYPE = 0,
-    MENUTYPE,
     BACKTYPE,
-    FILTERTYPE,
-    FILTERCHECKTYPE
 };
 
 

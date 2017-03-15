@@ -13,7 +13,7 @@
 
 @interface SWWebManager : NSObject
 
-//+ (instancetype) sharedManager;
++ (instancetype) sharedManager;
 
 - (void) loadAuthenticatedUser:(void (^)(SWUser *user))success ;
 - (void) repositoriesUser:(void (^)(NSArray<SWRepository *> *repo))success ;

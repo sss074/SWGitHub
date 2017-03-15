@@ -8,10 +8,12 @@
 
 #import "SWBaseDataModel.h"
 
-@class  SWRepository;
+@class  SWUser;
 
 @interface SWSearchRepoResult : SWBaseDataModel
 
-@property (nonatomic, strong) NSArray <SWRepository *> *items;
+@property (nonatomic, strong) NSNumber *total_count;
+@property (nonatomic, strong) NSArray *items;
+
 
 @end

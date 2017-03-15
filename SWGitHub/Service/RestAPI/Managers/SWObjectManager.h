@@ -15,8 +15,8 @@
 
 @end
 
-@interface SWObjectManager : RKObjectManager <RKObjectManagerProtocol>
+@interface SWObjectManager : NSObject <RKObjectManagerProtocol>
 
-+ (instancetype) sharedManager;
+@property (nonatomic,strong)RKObjectManager* sharedManager;
 
 @end

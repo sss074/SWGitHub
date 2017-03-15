@@ -16,46 +16,45 @@ static SWWebManager *sharedManager = nil;
 
 @implementation SWWebManager
 
-//+ (instancetype)sharedManager {
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        sharedManager = [[SWWebManager alloc]init];
-//    });
-//    
-//    return sharedManager;
-//}
++ (instancetype)sharedManager {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedManager = [[SWWebManager alloc]init];
+    });
+    
+    return sharedManager;
+}
 
 #pragma mark - Public methods
 
 - (void) loadAuthenticatedUser:(void (^)(SWUser *user))success{
-    
-    [self showIndecator:YES];
-    [[SWUserManager sharedManager] loadAuthenticatedUser:^(SWUser *user) {
-        [self showIndecator:NO];
-       success(user);
-    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-        [self showIndecator:NO];
-    }];
+  
+    SWUserManager *manager = [[SWUserManager alloc]init];
+  
+    [manager loadAuthenticatedUser:^(SWUser *user) {
+        if(success)
+            success(user);
+    } failure:nil];
 }
 - (void) repositoriesUser:(void (^)(NSArray<SWRepository *> *repo))success{
-    [self showIndecator:YES];
-    [[SWRepoManager sharedManager] repositoriesUser:^(NSArray<SWRepository *> *repos){
-        [self showIndecator:NO];
-       success(repos);
-    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-        [self showIndecator:NO];
-    }];
+    
+    SWRepoManager *manager = [[SWRepoManager alloc]init];
+
+    [manager repositoriesUser:^(NSArray<SWRepository *> *repos){
+        if(success)
+            success(repos);
+    } failure:nil];
 }
 
 - (void) searchRepositoriesUser:(NSString*)param complition:(void (^)(NSArray<SWRepository *> *repo))success{
-     [self showIndecator:YES];
-    [[SWSearchManager sharedManager] searchRepositoriesUser:param
+    
+    SWSearchManager *manager = [[SWSearchManager alloc]init];
+     [self showIndecator:YES];    [manager searchRepositoriesUser:param
     success:^(NSArray<SWRepository *> *repo) {
-        [self showIndecator:NO];
-        success(repo);
-    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-        [self showIndecator:NO];
-    }];
+
+        if(success)
+            success(repo);
+    } failure:nil];
 }
 
 @end

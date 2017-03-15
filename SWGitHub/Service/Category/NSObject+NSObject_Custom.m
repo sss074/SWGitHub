@@ -15,6 +15,7 @@ static dispatch_once_t onceToken;
 static DGActivityIndicatorView *viewButton;
 static UIWindow *window;
 
+
 @implementation NSObject (NSObject_Custom)
 
 @dynamic font,fontSize,cornerRadius,borderColor;
@@ -101,16 +102,29 @@ static UIWindow *window;
     
     return rectbut.size;
 }
+- (BOOL) validateEmail:(NSString *) candidate {
+    if([candidate isEqualToString:@""])
+        return  NO;
+    
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    
+    return [emailTest evaluateWithObject:candidate];
+}
+- (void)showAlertMessage:(NSString*)message{
+    TheApp;
+    
+    UIAlertController* alert= [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* actionOK = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:actionOK];
+    [app.window.rootViewController presentViewController:alert animated:YES completion:nil];
+}
 - (void)showIndecator:(BOOL)state{
     
-    [viewButton stopAnimating];
-    [viewButton removeFromSuperview];
-    window.hidden = YES;
-    window = nil;
-    
-    if(state){
-        
-        
+   
+    if(state && window == nil){
+
         window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
         window.windowLevel = UIWindowLevelAlert + 1.0;
         window.backgroundColor = [UIColor clearColor];
@@ -129,7 +143,13 @@ static UIWindow *window;
         [window addSubview:viewButton];
         [window bringSubviewToFront:viewButton];
         [viewButton startAnimating];
+    } else {
+        [viewButton stopAnimating];
+        [viewButton removeFromSuperview];
+        window.hidden = YES;
+        window = nil;
     }
+    
 }
 
 @end

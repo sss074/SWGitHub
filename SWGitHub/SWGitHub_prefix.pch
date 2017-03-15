@@ -14,7 +14,10 @@
     #import <Foundation/Foundation.h>
     #import <RestKit/RestKit.h>
     #import "AppConstants.h"
+    #import "AppDelegate.h"
+    #import "SWBaseController.h"
     #import "NSObject+NSObject_Custom.h"
+    #import "UIImageView+WebCache.h"
 #endif
 
 

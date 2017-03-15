@@ -10,7 +10,7 @@
 		B9EE47A656825E8AE8128794 /* libPods-SWGitHub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A31C9DE132B85E9B8C050261 /* libPods-SWGitHub.a */; };
 		EF979C3C1E78F2DC005CD844 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979C3B1E78F2DC005CD844 /* main.m */; };
 		EF979C3F1E78F2DC005CD844 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979C3E1E78F2DC005CD844 /* AppDelegate.m */; };
-		EF979C421E78F2DC005CD844 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979C411E78F2DC005CD844 /* ViewController.m */; };
+		EF979C421E78F2DC005CD844 /* SWRepoController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979C411E78F2DC005CD844 /* SWRepoController.m */; };
 		EF979C451E78F2DC005CD844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF979C431E78F2DC005CD844 /* Main.storyboard */; };
 		EF979C471E78F2DC005CD844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF979C461E78F2DC005CD844 /* Assets.xcassets */; };
 		EF979C4A1E78F2DC005CD844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF979C481E78F2DC005CD844 /* LaunchScreen.storyboard */; };
@@ -22,9 +22,14 @@
 		EF979D8B1E796F14005CD844 /* SWBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979D8A1E796F14005CD844 /* SWBaseDataModel.m */; };
 		EF979DA11E798CF3005CD844 /* SWSearchRepoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DA01E798CF3005CD844 /* SWSearchRepoResult.m */; };
 		EF979DA81E798EDA005CD844 /* SWSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DA71E798EDA005CD844 /* SWSearchManager.m */; };
-		EF979DAD1E799CC0005CD844 /* SWWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DAC1E799CC0005CD844 /* SWWebManager.m */; };
 		EF979DB11E79A095005CD844 /* NSObject+NSObject_Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB01E79A095005CD844 /* NSObject+NSObject_Custom.m */; };
 		EF979DB41E79A3B4005CD844 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB31E79A3B4005CD844 /* NSData+Base64.m */; };
+		EF979DB91E79AD89005CD844 /* SWBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB61E79AD89005CD844 /* SWBaseController.m */; };
+		EF979DBA1E79AD89005CD844 /* SWMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB81E79AD89005CD844 /* SWMenuController.m */; };
+		EF979DBD1E79AFEE005CD844 /* SWMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DBC1E79AFEE005CD844 /* SWMenuCell.m */; };
+		EF979DC11E79C19E005CD844 /* SWLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DC01E79C19E005CD844 /* SWLoginController.m */; };
+		EF979DC41E79D0F9005CD844 /* SWRepoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DC31E79D0F9005CD844 /* SWRepoCell.m */; };
+		EF979DC81E79D84D005CD844 /* SWWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DC71E79D84D005CD844 /* SWWebManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +40,8 @@
 		EF979C3B1E78F2DC005CD844 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF979C3D1E78F2DC005CD844 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF979C3E1E78F2DC005CD844 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF979C401E78F2DC005CD844 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF979C411E78F2DC005CD844 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF979C401E78F2DC005CD844 /* SWRepoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRepoController.h; sourceTree = "<group>"; };
+		EF979C411E78F2DC005CD844 /* SWRepoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRepoController.m; sourceTree = "<group>"; };
 		EF979C441E78F2DC005CD844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF979C461E78F2DC005CD844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF979C491E78F2DC005CD844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,12 +65,22 @@
 		EF979DA61E798EDA005CD844 /* SWSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSearchManager.h; sourceTree = "<group>"; };
 		EF979DA71E798EDA005CD844 /* SWSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSearchManager.m; sourceTree = "<group>"; };
 		EF979DA91E79942D005CD844 /* SWRestKitMappableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRestKitMappableModel.h; sourceTree = "<group>"; };
-		EF979DAB1E799CC0005CD844 /* SWWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebManager.h; sourceTree = "<group>"; };
-		EF979DAC1E799CC0005CD844 /* SWWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebManager.m; sourceTree = "<group>"; };
 		EF979DAF1E79A095005CD844 /* NSObject+NSObject_Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSObject_Custom.h"; sourceTree = "<group>"; };
 		EF979DB01E79A095005CD844 /* NSObject+NSObject_Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSObject_Custom.m"; sourceTree = "<group>"; };
 		EF979DB21E79A3B4005CD844 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		EF979DB31E79A3B4005CD844 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		EF979DB51E79AD89005CD844 /* SWBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBaseController.h; sourceTree = "<group>"; };
+		EF979DB61E79AD89005CD844 /* SWBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBaseController.m; sourceTree = "<group>"; };
+		EF979DB71E79AD89005CD844 /* SWMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMenuController.h; sourceTree = "<group>"; };
+		EF979DB81E79AD89005CD844 /* SWMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMenuController.m; sourceTree = "<group>"; };
+		EF979DBB1E79AFEE005CD844 /* SWMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMenuCell.h; sourceTree = "<group>"; };
+		EF979DBC1E79AFEE005CD844 /* SWMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMenuCell.m; sourceTree = "<group>"; };
+		EF979DBF1E79C19E005CD844 /* SWLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLoginController.h; sourceTree = "<group>"; };
+		EF979DC01E79C19E005CD844 /* SWLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLoginController.m; sourceTree = "<group>"; };
+		EF979DC21E79D0F9005CD844 /* SWRepoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRepoCell.h; sourceTree = "<group>"; };
+		EF979DC31E79D0F9005CD844 /* SWRepoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRepoCell.m; sourceTree = "<group>"; };
+		EF979DC61E79D84D005CD844 /* SWWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebManager.h; sourceTree = "<group>"; };
+		EF979DC71E79D84D005CD844 /* SWWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +135,6 @@
 			children = (
 				EF979C521E78F301005CD844 /* AppDelegate */,
 				EF979C531E78F30C005CD844 /* Controllers */,
-				EF979C541E78F313005CD844 /* Views */,
 				EF979C551E78F318005CD844 /* Cells */,
 				EF979C591E78F360005CD844 /* Service */,
 				EF979C511E78F2E7005CD844 /* Storyboard */,
@@ -162,6 +176,7 @@
 		EF979C531E78F30C005CD844 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF979DBE1E79C179005CD844 /* Login */,
 				EF979C581E78F333005CD844 /* Repositories */,
 				EF979C571E78F32C005CD844 /* Menu */,
 				EF979C561E78F327005CD844 /* Base */,
@@ -169,16 +184,13 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		EF979C541E78F313005CD844 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		EF979C551E78F318005CD844 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EF979DBB1E79AFEE005CD844 /* SWMenuCell.h */,
+				EF979DBC1E79AFEE005CD844 /* SWMenuCell.m */,
+				EF979DC21E79D0F9005CD844 /* SWRepoCell.h */,
+				EF979DC31E79D0F9005CD844 /* SWRepoCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -186,6 +198,8 @@
 		EF979C561E78F327005CD844 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				EF979DB51E79AD89005CD844 /* SWBaseController.h */,
+				EF979DB61E79AD89005CD844 /* SWBaseController.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -193,6 +207,8 @@
 		EF979C571E78F32C005CD844 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				EF979DB71E79AD89005CD844 /* SWMenuController.h */,
+				EF979DB81E79AD89005CD844 /* SWMenuController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -200,8 +216,8 @@
 		EF979C581E78F333005CD844 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				EF979C401E78F2DC005CD844 /* ViewController.h */,
-				EF979C411E78F2DC005CD844 /* ViewController.m */,
+				EF979C401E78F2DC005CD844 /* SWRepoController.h */,
+				EF979C411E78F2DC005CD844 /* SWRepoController.m */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -228,7 +244,7 @@
 		EF979CE81E790081005CD844 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				EF979DAA1E799C98005CD844 /* Manager */,
+				EF979DC51E79D82F005CD844 /* WebManager */,
 				EF979DA51E798E2C005CD844 /* SearchRepo */,
 				EF979DA41E798E20005CD844 /* UserRepo */,
 				EF979DA31E798E1B005CD844 /* User */,
@@ -321,15 +337,6 @@
 			name = SearchRepo;
 			sourceTree = "<group>";
 		};
-		EF979DAA1E799C98005CD844 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				EF979DAB1E799CC0005CD844 /* SWWebManager.h */,
-				EF979DAC1E799CC0005CD844 /* SWWebManager.m */,
-			);
-			name = Manager;
-			sourceTree = "<group>";
-		};
 		EF979DAE1E79A095005CD844 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +347,24 @@
 			);
 			name = Decorator;
 			path = Service/Category;
+			sourceTree = "<group>";
+		};
+		EF979DBE1E79C179005CD844 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF979DBF1E79C19E005CD844 /* SWLoginController.h */,
+				EF979DC01E79C19E005CD844 /* SWLoginController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		EF979DC51E79D82F005CD844 /* WebManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF979DC61E79D84D005CD844 /* SWWebManager.h */,
+				EF979DC71E79D84D005CD844 /* SWWebManager.m */,
+			);
+			name = WebManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,15 +491,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF979D8B1E796F14005CD844 /* SWBaseDataModel.m in Sources */,
+				EF979DB91E79AD89005CD844 /* SWBaseController.m in Sources */,
+				EF979DC11E79C19E005CD844 /* SWLoginController.m in Sources */,
 				EF979CFA1E790081005CD844 /* SWUser.m in Sources */,
-				EF979C421E78F2DC005CD844 /* ViewController.m in Sources */,
+				EF979C421E78F2DC005CD844 /* SWRepoController.m in Sources */,
 				EF979DB41E79A3B4005CD844 /* NSData+Base64.m in Sources */,
 				EF979CF81E790081005CD844 /* SWRepository.m in Sources */,
 				EF979D001E791B6C005CD844 /* SWRepoManager.m in Sources */,
+				EF979DC81E79D84D005CD844 /* SWWebManager.m in Sources */,
 				EF979C3F1E78F2DC005CD844 /* AppDelegate.m in Sources */,
 				EF979DA81E798EDA005CD844 /* SWSearchManager.m in Sources */,
+				EF979DBD1E79AFEE005CD844 /* SWMenuCell.m in Sources */,
 				EF979CF71E790081005CD844 /* SWUserManager.m in Sources */,
-				EF979DAD1E799CC0005CD844 /* SWWebManager.m in Sources */,
+				EF979DBA1E79AD89005CD844 /* SWMenuController.m in Sources */,
+				EF979DC41E79D0F9005CD844 /* SWRepoCell.m in Sources */,
 				EF979DB11E79A095005CD844 /* NSObject+NSObject_Custom.m in Sources */,
 				EF979CF61E790081005CD844 /* SWObjectManager.m in Sources */,
 				EF979DA11E798CF3005CD844 /* SWSearchRepoResult.m in Sources */,

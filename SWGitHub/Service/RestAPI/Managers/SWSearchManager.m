@@ -15,12 +15,17 @@
 
 - (void) searchRepositoriesUser:(NSString*)param success:(void (^)(NSArray<SWRepository *> *repo))success failure:(void (^)(RKObjectRequestOperation *operation, NSError *error))failure{
     
-    [self getObjectsAtPath:[NSString stringWithFormat:@"%@%@",[SWSearchRepoResult pathPattern],param] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [self showIndecator:YES];
+    
+    [self.sharedManager getObjectsAtPath:[NSString stringWithFormat:@"%@%@",[SWSearchRepoResult pathPattern],param] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+        [self showIndecator:NO];
         if (success) {
             SWSearchRepoResult* obj = (SWSearchRepoResult*)mappingResult.firstObject;
-            success((NSArray<SWRepository *>*)obj.items);
+            success(obj.items);
         }
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        [self showIndecator:NO];
+        [self showAlertMessage:error.description];
         if (failure) {
             failure(operation, error);
         }
@@ -34,7 +39,7 @@
     [super setupResponseDescriptors];
     
     RKResponseDescriptor *repoResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[SWSearchRepoResult responseMapping] method:RKRequestMethodGET pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    [self addResponseDescriptor:repoResponseDescriptors];
+    [self.sharedManager addResponseDescriptor:repoResponseDescriptors];
 }
 
 
