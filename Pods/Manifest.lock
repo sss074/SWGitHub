@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DGActivityIndicatorView (2.1.1)
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
   - RESideMenu (4.0.7)
@@ -42,18 +43,18 @@ PODS:
   - SDWebImage/Core (3.8.2)
   - SOCKit (1.1)
   - TransitionKit (2.2.1)
-  - UAGithubEngine (2.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - DGActivityIndicatorView
   - RESideMenu
   - RestKit (~> 0.27.0)
   - SDVersion (~> 3.5)
   - SDWebImage (~> 3.7)
-  - UAGithubEngine
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   RestKit: a0244db34e14ed9cf059fcee2be6733cc162c34a
@@ -62,8 +63,7 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
-  UAGithubEngine: 774172b0cc0c9fe35c7bcfb7eb3d64787b846d9d
 
-PODFILE CHECKSUM: 228613f005b3e3bb1c5e83e05bef6c82d1795fe2
+PODFILE CHECKSUM: 0106d06af2a05fe076dc33696c15fcefc391eba4
 
 COCOAPODS: 1.1.1

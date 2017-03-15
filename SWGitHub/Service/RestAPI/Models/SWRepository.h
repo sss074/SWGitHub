@@ -7,20 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SWBaseDataModel.h"
 
 @class SWUser;
 
-@interface SWRepository : NSObject
+@interface SWRepository : SWBaseDataModel <SWRestKitMappableModel>
 
 @property (nonatomic, strong) NSNumber *repositoryId;
-@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *fullName;
-@property (nonatomic, strong) NSString *description;
-@property (nonatomic, strong) NSString *apiUrl;
-@property (nonatomic, strong) NSNumber *stargazersCount;
-@property (nonatomic, strong) NSNumber *watchersCount;
-@property (nonatomic, strong) NSNumber *isPrivateRepository;
-@property (nonatomic, strong) NSNumber *isForkedRepository;
+@property (nonatomic, strong) NSString *ldescription;
 @property (nonatomic, strong) SWUser *owner;
 
 @end

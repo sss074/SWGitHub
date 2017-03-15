@@ -19,12 +19,18 @@ static SWObjectManager *sharedManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
        
-        NSURL *url = [NSURL URLWithString:BASE_URL];
+        NSURL *url = [NSURL URLWithString:kDevBaseApiUrl];
 
         sharedManager = [self managerWithBaseURL:url];
         sharedManager.requestSerializationMIMEType = RKMIMETypeJSON;
         [sharedManager setupRequestDescriptors];
         [sharedManager setupResponseDescriptors];
+        
+        NSDictionary* userInfo = [[NSUserDefaults standardUserDefaults]objectForKey:@"userInfo"];
+        if(userInfo != nil){
+             [sharedManager.HTTPClient setDefaultHeader:@"Authorization" value: [NSString stringWithFormat:@"Basic %@", [[[NSString stringWithFormat:@"%@:%@", userInfo[@"login"],userInfo[@"password"]] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString]]];
+        }
+//        NSData *data = [NSString stringWithFormat:@"Basic %@", [[[NSString stringWithFormat:@"%@:%@", @"sss074@rambler.ru", @"fazawaka1978"] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString]];
         [sharedManager.HTTPClient setDefaultHeader:@"Authorization" value: [NSString stringWithFormat:@"Basic %@", [[[NSString stringWithFormat:@"%@:%@", @"sss074@rambler.ru", @"fazawaka1978"] dataUsingEncoding:NSUTF8StringEncoding] base64EncodedString]]];
     });
 

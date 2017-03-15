@@ -8,10 +8,10 @@
 
 #import "SWObjectManager.h"
 
-@class User;
+@class SWUser;
 
 @interface SWUserManager : SWObjectManager
 
-- (void) loadAuthenticatedUser:(void (^)(User *user))success failure:(void (^)(RKObjectRequestOperation *operation, NSError *error))failure;
+- (void) loadAuthenticatedUser:(void (^)(SWUser *user))success failure:(void (^)(RKObjectRequestOperation *operation, NSError *error))failure;
 
 @end

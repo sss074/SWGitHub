@@ -1,20 +1,18 @@
 //
-//  Repository.m
+//  SWSearchRepoResult.m
 //  SWGitHub
 //
 //  Created by Sergiy Bekker on 15.03.17.
 //  Copyright © 2017 SBApps. All rights reserved.
 //
 
+#import "SWSearchRepoResult.h"
 #import "SWRepository.h"
-#import "SWUser.h"
 
-@implementation SWRepository
+@implementation SWSearchRepoResult
 
 + (NSDictionary *)attributesMapping {
-    return @{@"id": @"repositoryId",
-             @"full_name": @"fullName",
-             @"description": @"ldescription"
+    return @{@"items": @"items"
              };
 }
 
@@ -22,13 +20,11 @@
     
     RKObjectMapping *responseMapping = [super responseMapping];
     [responseMapping addAttributeMappingsFromDictionary:[self attributesMapping]];
-    RKObjectMapping *ownerMapping = [SWUser responseMapping];
-    [responseMapping addRelationshipMappingWithSourceKeyPath:@"owner" mapping:ownerMapping];
     
     return responseMapping;
 }
 + (NSString *)pathPattern {
-    return @"/user/repos";
+    return @"/search/repositories?q=";
 }
 
 + (NSString *)keyPath {
@@ -39,7 +35,8 @@
     return @{};
 }
 + (Class<SWRestKitMappableModel>)mappedObjectClass {
-    return [SWRepository class];
+    return [SWSearchRepoResult class];
 }
+
 
 @end

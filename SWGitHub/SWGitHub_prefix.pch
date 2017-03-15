@@ -12,7 +12,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <RestKit/RestKit.h>
     #import "AppConstants.h"
+    #import "NSObject+NSObject_Custom.h"
 #endif
 
 

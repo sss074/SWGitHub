@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DGActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ISO8601DateFormatterValueTransformer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,15 +59,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>UAGithubEngine.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>41B0F9700EEAFEAE6564E93593D0CA42</key>
+		<key>13D031B48AE598D839BBAD1FDDCA751B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>243026A9971B09A4A246788654D5581C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6276F824EDCC92F1516166BFB23F546A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,12 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>85D7A287E375D711B9BE6B1B59E517CF</key>
+		<key>7ED6D5C8EAB01AC3A9A0A5EBE59082DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B33D909F431805D6EC7AE0522A6A1D0</key>
+		<key>9177DD83704A8DF7C944F4A6AC3A4BCA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>995E10F24ACA7244D63AE90D5AE685F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,32 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6E7F4CD79D51CD536CD1E2D1324A1BD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>AEFC2183D5F1E351B229C8A5216E61B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6B20DF5B3F1D37F3450F2D7753F1CAD</key>
+		<key>B161C5AEA22F3866AD0724D302669A89</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CABB6EAB4BD4E52CAECBEBB49CB56B21</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CBAC5A27BCD7F1CCB0AD8348213B94FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D40BDAD165FDF3A01D8256F2BF0DF4CA</key>
+		<key>FBA9754FB7A82758566D360BD30C2517</key>
 		<dict>
 			<key>primary</key>
 			<true/>

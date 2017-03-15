@@ -7,17 +7,15 @@
 //
 
 #import "SWUserManager.h"
-#import <RestKit/RestKit.h>
-#import "MappingProvider.h"
 #import "SWUser.h"
 
 
 @implementation SWUserManager 
 
-- (void) loadAuthenticatedUser:(void (^)(User *))success failure:(void (^)(RKObjectRequestOperation *, NSError *))failure {
+- (void) loadAuthenticatedUser:(void (^)(SWUser *))success failure:(void (^)(RKObjectRequestOperation *, NSError *))failure {
 
     
-    [self getObjectsAtPath:@"/user" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [self getObjectsAtPath:[SWUser pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         if (success) {
             SWUser *currentUser = (SWUser *)[mappingResult.array firstObject];
             success(currentUser);
@@ -35,7 +33,7 @@
    
     [super setupResponseDescriptors];
 
-    RKResponseDescriptor *authenticatedUserResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[MappingProvider userMapping] method:RKRequestMethodGET pathPattern:@"/user" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    RKResponseDescriptor *authenticatedUserResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[SWUser responseMapping] method:RKRequestMethodGET pathPattern:[SWUser pathPattern] keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     [self addResponseDescriptor:authenticatedUserResponseDescriptors];
  
 }

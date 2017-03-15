@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SWBaseDataModel.h"
 
-@interface SWUser : NSObject
+@interface SWUser : SWBaseDataModel <SWRestKitMappableModel>
 
 @property (nonatomic, strong) NSString *login;
 @property (nonatomic, strong) NSNumber *userId;

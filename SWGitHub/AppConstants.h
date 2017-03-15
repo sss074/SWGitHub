@@ -9,11 +9,11 @@
 #ifndef AppConstants_h
 #define AppConstants_h
 
-#define BASE_URL @"https://api.github.com"
+
 #define PERSONAL_ACCESS_TOKEN @"PUT_YOUR_ACCESS_TOKEN"
 #define TheApp AppDelegate *app = (AppDelegate*)[[UIApplication sharedApplication] delegate]
 
-
+static NSString * const kDevBaseApiUrl  =  @"https://api.github.com";
 static NSString *charSet = @"_.-/:;()&@\",?!'[]{}#%^*+=\\|~<>₽$£₹€•´`";
 static NSString *passCharTemplate = @"/:;()&@\",?!'[]{}#%^*+=\\|~<>₽$£₹€•";
 static NSString *emailCharTemplate = @" /:;()&\",?!'[]{}#%^*+=\\|~<>₽$£₹€•";

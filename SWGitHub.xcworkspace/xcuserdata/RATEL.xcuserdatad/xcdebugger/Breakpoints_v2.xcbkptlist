@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SWGitHub/ViewController.m"
-            timestampString = "511253690.908897"
+            timestampString = "511289101.796648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-setAuthenticatedUser:"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/UAGithubEngine/UAGithubEngine/UAGithubEngine.m"
-            timestampString = "511250655.257861"
+            filePath = "SWGitHub/ViewController.m"
+            timestampString = "511289101.796648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-sendRequest:requestType:responseType:withParameters:page:error:"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/UAGithubEngine/UAGithubEngine/UAGithubEngine.m"
-            timestampString = "511250755.472076"
+            filePath = "SWGitHub/ViewController.m"
+            timestampString = "511289116.504376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "-sendRequest:requestType:responseType:withParameters:page:error:"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SWGitHub/Service/RestAPI/Managers/UserManager.m"
-            timestampString = "511252783.241797"
+            filePath = "SWGitHub/ViewController.m"
+            timestampString = "511289123.758244"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "-loadAuthenticatedUser:failure:"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SWGitHub/Service/RestAPI/Managers/UserManager.m"
-            timestampString = "511252540.228826"
+            filePath = "SWGitHub/Service/RestAPI/Managers/SWWebManager.m"
+            timestampString = "511289132.119623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-loadAuthenticatedUser:failure:"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-searchRepositoriesUser:complition:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +89,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SWGitHub/Service/RestAPI/Managers/UserManager.m"
-            timestampString = "511253289.354418"
+            filePath = "SWGitHub/Service/RestAPI/Managers/SWSearchManager.m"
+            timestampString = "511289139.960512"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-searchRepositoriesUser:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SWSearchManager searchRepositoriesUser:success:failure:]"
+                  moduleName = "SWGitHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RATEL/Documents/Works/SWGitHub/SWGitHub/Service/RestAPI/Managers/SWSearchManager.m"
+                  timestampString = "511289474.280668"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__58-[SWSearchManager searchRepositoriesUser:success:failure:]_block_invoke"
+                  moduleName = "SWGitHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RATEL/Documents/Works/SWGitHub/SWGitHub/Service/RestAPI/Managers/SWSearchManager.m"
+                  timestampString = "511289474.283251"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWGitHub/Service/RestAPI/Managers/SWObjectManager.m"
+            timestampString = "511289280.772823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "-loadAuthenticatedUser:failure:"
+            landmarkName = "+sharedManager"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[SWObjectManager sharedManager]"
+                  moduleName = "SWGitHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RATEL/Documents/Works/SWGitHub/SWGitHub/Service/RestAPI/Managers/SWObjectManager.m"
+                  timestampString = "511289474.291129"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__32+[SWObjectManager sharedManager]_block_invoke"
+                  moduleName = "SWGitHub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/RATEL/Documents/Works/SWGitHub/SWGitHub/Service/RestAPI/Managers/SWObjectManager.m"
+                  timestampString = "511289474.294026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWGitHub/Service/RestAPI/Managers/SWObjectManager.m"
+            timestampString = "511289284.477037"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "+sharedManager"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,45 +201,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SWGitHub/ViewController.m"
-            timestampString = "511253677.400176"
+            filePath = "SWGitHub/Service/RestAPI/Managers/SWWebManager.m"
+            timestampString = "511289335.364323"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SWGitHub/ViewController.m"
-            timestampString = "511253679.625991"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SWGitHub/Service/RestAPI/Managers/SWRepoManager.m"
-            timestampString = "511254004.446548"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-repositoriesUser:failure:"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "-searchRepositoriesUser:complition:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

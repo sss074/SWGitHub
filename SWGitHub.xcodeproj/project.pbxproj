@@ -18,8 +18,13 @@
 		EF979CF71E790081005CD844 /* SWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979CEC1E790081005CD844 /* SWUserManager.m */; };
 		EF979CF81E790081005CD844 /* SWRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979CEF1E790081005CD844 /* SWRepository.m */; };
 		EF979CFA1E790081005CD844 /* SWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979CF31E790081005CD844 /* SWUser.m */; };
-		EF979CFB1E790081005CD844 /* MappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979CF51E790081005CD844 /* MappingProvider.m */; };
 		EF979D001E791B6C005CD844 /* SWRepoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979CFF1E791B6C005CD844 /* SWRepoManager.m */; };
+		EF979D8B1E796F14005CD844 /* SWBaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979D8A1E796F14005CD844 /* SWBaseDataModel.m */; };
+		EF979DA11E798CF3005CD844 /* SWSearchRepoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DA01E798CF3005CD844 /* SWSearchRepoResult.m */; };
+		EF979DA81E798EDA005CD844 /* SWSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DA71E798EDA005CD844 /* SWSearchManager.m */; };
+		EF979DAD1E799CC0005CD844 /* SWWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DAC1E799CC0005CD844 /* SWWebManager.m */; };
+		EF979DB11E79A095005CD844 /* NSObject+NSObject_Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB01E79A095005CD844 /* NSObject+NSObject_Custom.m */; };
+		EF979DB41E79A3B4005CD844 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF979DB31E79A3B4005CD844 /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +51,21 @@
 		EF979CEF1E790081005CD844 /* SWRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRepository.m; sourceTree = "<group>"; };
 		EF979CF21E790081005CD844 /* SWUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUser.h; sourceTree = "<group>"; };
 		EF979CF31E790081005CD844 /* SWUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUser.m; sourceTree = "<group>"; };
-		EF979CF41E790081005CD844 /* MappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingProvider.h; sourceTree = "<group>"; };
-		EF979CF51E790081005CD844 /* MappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingProvider.m; sourceTree = "<group>"; };
 		EF979CFE1E791B6C005CD844 /* SWRepoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRepoManager.h; sourceTree = "<group>"; };
 		EF979CFF1E791B6C005CD844 /* SWRepoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRepoManager.m; sourceTree = "<group>"; };
+		EF979D891E796F14005CD844 /* SWBaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBaseDataModel.h; sourceTree = "<group>"; };
+		EF979D8A1E796F14005CD844 /* SWBaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBaseDataModel.m; sourceTree = "<group>"; };
+		EF979D9F1E798CF3005CD844 /* SWSearchRepoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSearchRepoResult.h; sourceTree = "<group>"; };
+		EF979DA01E798CF3005CD844 /* SWSearchRepoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSearchRepoResult.m; sourceTree = "<group>"; };
+		EF979DA61E798EDA005CD844 /* SWSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSearchManager.h; sourceTree = "<group>"; };
+		EF979DA71E798EDA005CD844 /* SWSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSearchManager.m; sourceTree = "<group>"; };
+		EF979DA91E79942D005CD844 /* SWRestKitMappableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRestKitMappableModel.h; sourceTree = "<group>"; };
+		EF979DAB1E799CC0005CD844 /* SWWebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWWebManager.h; sourceTree = "<group>"; };
+		EF979DAC1E799CC0005CD844 /* SWWebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWWebManager.m; sourceTree = "<group>"; };
+		EF979DAF1E79A095005CD844 /* NSObject+NSObject_Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSObject_Custom.h"; sourceTree = "<group>"; };
+		EF979DB01E79A095005CD844 /* NSObject+NSObject_Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSObject_Custom.m"; sourceTree = "<group>"; };
+		EF979DB21E79A3B4005CD844 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		EF979DB31E79A3B4005CD844 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				EF979C461E78F2DC005CD844 /* Assets.xcassets */,
-				EF979C481E78F2DC005CD844 /* LaunchScreen.storyboard */,
 				EF979C431E78F2DC005CD844 /* Main.storyboard */,
+				EF979C481E78F2DC005CD844 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -194,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				EF979C981E78F440005CD844 /* RestAPI */,
+				EF979DAE1E79A095005CD844 /* Decorator */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -201,7 +218,6 @@
 		EF979C981E78F440005CD844 /* RestAPI */ = {
 			isa = PBXGroup;
 			children = (
-				EF979CFC1E7901B0005CD844 /* Provider */,
 				EF979CED1E790081005CD844 /* Models */,
 				EF979CE81E790081005CD844 /* Managers */,
 			);
@@ -212,12 +228,11 @@
 		EF979CE81E790081005CD844 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				EF979CE91E790081005CD844 /* SWObjectManager.h */,
-				EF979CEA1E790081005CD844 /* SWObjectManager.m */,
-				EF979CEB1E790081005CD844 /* SWUserManager.h */,
-				EF979CEC1E790081005CD844 /* SWUserManager.m */,
-				EF979CFE1E791B6C005CD844 /* SWRepoManager.h */,
-				EF979CFF1E791B6C005CD844 /* SWRepoManager.m */,
+				EF979DAA1E799C98005CD844 /* Manager */,
+				EF979DA51E798E2C005CD844 /* SearchRepo */,
+				EF979DA41E798E20005CD844 /* UserRepo */,
+				EF979DA31E798E1B005CD844 /* User */,
+				EF979DA21E798E0F005CD844 /* Base */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -225,21 +240,106 @@
 		EF979CED1E790081005CD844 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EF979CEE1E790081005CD844 /* SWRepository.h */,
-				EF979CEF1E790081005CD844 /* SWRepository.m */,
-				EF979CF21E790081005CD844 /* SWUser.h */,
-				EF979CF31E790081005CD844 /* SWUser.m */,
+				EF979D8C1E797360005CD844 /* UserModel */,
+				EF979D8D1E79736C005CD844 /* ReposModel */,
+				EF979D9E1E798CD0005CD844 /* SearchRepoResult */,
+				EF979D881E796EFE005CD844 /* Base */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EF979CFC1E7901B0005CD844 /* Provider */ = {
+		EF979D881E796EFE005CD844 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				EF979CF41E790081005CD844 /* MappingProvider.h */,
-				EF979CF51E790081005CD844 /* MappingProvider.m */,
+				EF979D891E796F14005CD844 /* SWBaseDataModel.h */,
+				EF979D8A1E796F14005CD844 /* SWBaseDataModel.m */,
+				EF979DA91E79942D005CD844 /* SWRestKitMappableModel.h */,
 			);
-			name = Provider;
+			name = Base;
+			sourceTree = "<group>";
+		};
+		EF979D8C1E797360005CD844 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF979CF21E790081005CD844 /* SWUser.h */,
+				EF979CF31E790081005CD844 /* SWUser.m */,
+			);
+			name = UserModel;
+			sourceTree = "<group>";
+		};
+		EF979D8D1E79736C005CD844 /* ReposModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF979CEE1E790081005CD844 /* SWRepository.h */,
+				EF979CEF1E790081005CD844 /* SWRepository.m */,
+			);
+			name = ReposModel;
+			sourceTree = "<group>";
+		};
+		EF979D9E1E798CD0005CD844 /* SearchRepoResult */ = {
+			isa = PBXGroup;
+			children = (
+				EF979D9F1E798CF3005CD844 /* SWSearchRepoResult.h */,
+				EF979DA01E798CF3005CD844 /* SWSearchRepoResult.m */,
+			);
+			name = SearchRepoResult;
+			sourceTree = "<group>";
+		};
+		EF979DA21E798E0F005CD844 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF979CE91E790081005CD844 /* SWObjectManager.h */,
+				EF979CEA1E790081005CD844 /* SWObjectManager.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		EF979DA31E798E1B005CD844 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				EF979CEB1E790081005CD844 /* SWUserManager.h */,
+				EF979CEC1E790081005CD844 /* SWUserManager.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		EF979DA41E798E20005CD844 /* UserRepo */ = {
+			isa = PBXGroup;
+			children = (
+				EF979CFE1E791B6C005CD844 /* SWRepoManager.h */,
+				EF979CFF1E791B6C005CD844 /* SWRepoManager.m */,
+			);
+			name = UserRepo;
+			sourceTree = "<group>";
+		};
+		EF979DA51E798E2C005CD844 /* SearchRepo */ = {
+			isa = PBXGroup;
+			children = (
+				EF979DA61E798EDA005CD844 /* SWSearchManager.h */,
+				EF979DA71E798EDA005CD844 /* SWSearchManager.m */,
+			);
+			name = SearchRepo;
+			sourceTree = "<group>";
+		};
+		EF979DAA1E799C98005CD844 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF979DAB1E799CC0005CD844 /* SWWebManager.h */,
+				EF979DAC1E799CC0005CD844 /* SWWebManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		EF979DAE1E79A095005CD844 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				EF979DAF1E79A095005CD844 /* NSObject+NSObject_Custom.h */,
+				EF979DB01E79A095005CD844 /* NSObject+NSObject_Custom.m */,
+				EF979DB21E79A3B4005CD844 /* NSData+Base64.h */,
+				EF979DB31E79A3B4005CD844 /* NSData+Base64.m */,
+			);
+			name = Decorator;
+			path = Service/Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,14 +465,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF979D8B1E796F14005CD844 /* SWBaseDataModel.m in Sources */,
 				EF979CFA1E790081005CD844 /* SWUser.m in Sources */,
 				EF979C421E78F2DC005CD844 /* ViewController.m in Sources */,
-				EF979CFB1E790081005CD844 /* MappingProvider.m in Sources */,
+				EF979DB41E79A3B4005CD844 /* NSData+Base64.m in Sources */,
 				EF979CF81E790081005CD844 /* SWRepository.m in Sources */,
 				EF979D001E791B6C005CD844 /* SWRepoManager.m in Sources */,
 				EF979C3F1E78F2DC005CD844 /* AppDelegate.m in Sources */,
+				EF979DA81E798EDA005CD844 /* SWSearchManager.m in Sources */,
 				EF979CF71E790081005CD844 /* SWUserManager.m in Sources */,
+				EF979DAD1E799CC0005CD844 /* SWWebManager.m in Sources */,
+				EF979DB11E79A095005CD844 /* NSObject+NSObject_Custom.m in Sources */,
 				EF979CF61E790081005CD844 /* SWObjectManager.m in Sources */,
+				EF979DA11E798CF3005CD844 /* SWSearchRepoResult.m in Sources */,
 				EF979C3C1E78F2DC005CD844 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46353Z8TA3;
+				GCC_PREFIX_HEADER = SWGitHub/SWGitHub_prefix.pch;
 				INFOPLIST_FILE = SWGitHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -507,6 +613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46353Z8TA3;
+				GCC_PREFIX_HEADER = SWGitHub/SWGitHub_prefix.pch;
 				INFOPLIST_FILE = SWGitHub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,16 +7,15 @@
 //
 
 #import "SWRepoManager.h"
-#import <RestKit/RestKit.h>
-#import "MappingProvider.h"
 #import "SWRepository.h"
+
 
 @implementation SWRepoManager
 
 
 - (void) repositoriesUser:(void (^)(NSArray<SWRepository *> *repo))success failure:(void (^)(RKObjectRequestOperation *operation, NSError *error))failure{
     
-    [self getObjectsAtPath:@"/user/repos" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [self getObjectsAtPath:[SWRepository pathPattern] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         if (success) {
             success((NSArray<SWRepository *>*)mappingResult.array);
         }
@@ -33,7 +32,7 @@
     
     [super setupResponseDescriptors];
   
-    RKResponseDescriptor *repoResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[MappingProvider repositoryMapping] method:RKRequestMethodGET pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    RKResponseDescriptor *repoResponseDescriptors = [RKResponseDescriptor responseDescriptorWithMapping:[SWRepository responseMapping] method:RKRequestMethodGET pathPattern:nil keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     [self addResponseDescriptor:repoResponseDescriptors];
 }
 
